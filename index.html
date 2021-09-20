@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="left-container">
+        <div class="searchBar">
+          <input type="search" name="search" id="search" placeholder="Search
+          your town..." / ><i class="fas fa-search"></i>
+          <button class="submit-button">Submit</button>
+        </div>
+
+        <div class="main-weather-picture text-center mt-5">
+          <img
+            class="img-fluid picture--label"
+            style="width: 40%"
+            src="./images/sunny.png"
+            alt=""
+          />
+        </div>
+        <h2 class="temperature-label text-center mt-3">12°C</h2>
+        <h2 class="text-center mt-4 city-label">New York, USA</h2>
+        <p class="text-center mt-5 day-label">
+          Monday, <span class="time-label" style="color: #afafaf">16:00</span>
+        </p>
+        <hr />
+        <p class="text-center mt-5 weather-status-label">🌧Rainy</p>
+        <div class="country-flag mt-5"></div>
+      </div>
+      <div class="right-container">
+        <div class="row">
+          <div class="col-lg-3">
+            <a href="#"><h4>Today</h4></a>
+          </div>
+          <div class="col-lg-3">
+            <a href="#"><h4>Week</h4></a>
+          </div>
+          <div class="col-lg-3">
+            <button class="btn btn-sm btn-dark rounded-pill p-3 float-end mx-3">
+              °F
+            </button>
+            <button class="btn btn-sm btn-danger rounded-pill p-3 float-end">
+              °C
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 weekdays text-center">
+            <h4 class="first-day-label">Sun</h4>
+            <img
+              class="first-day-of-week-picture"
+              src="./images/sunny.png"
+              style="width: 50%"
+              alt="sunny-picture"
+            />
+            <p class="first-day-temperature-max">15°C</p>
+            <p class="first-day-temperature-min" style="color: #afafaf">3°C</p>
+          </div>
+
+          <div class="col-lg-2 weekdays text-center">
+            <h4 class="second-day-label">Mon</h4>
+            <img
+              class="second-day-of-week-picture"
+              src="./images/sunny.png"
+              style="width: 50%"
+              alt="sunny-picture"
+            />
+            <p class="second-day-temperature-max">15°C</p>
+            <p class="second-day-temperature-min" style="color: #afafaf">3°C</p>
+          </div>
+          <div class="col-lg-2 weekdays text-center">
+            <h4 class="third-day-label">Tue</h4>
+            <img
+              class="third-day-of-week-picture"
+              src="./images/sunny.png"
+              style="width: 50%"
+              alt="sunny-picture"
+            />
+            <p class="third-day-temperature-max">15°C</p>
+            <p class="third-day-temperature-min" style="color: #afafaf">3°C</p>
+          </div>
+          <div class="col-lg-2 weekdays text-center">
+            <h4 class="fourth-day-label">Wed</h4>
+            <img
+              class="fourth-day-of-week-picture"
+              src="./images/sunny.png"
+              style="width: 50%"
+              alt="sunny-picture"
+            />
+            <p class="fourth-day-temperature-max">15°C</p>
+            <p class="fourth-day-temperature-min" style="color: #afafaf">3°C</p>
+          </div>
+          <div class="col-lg-2 weekdays text-center">
+            <h4 class="fifth-day-label">Thu</h4>
+            <img
+              class="fifth-day-of-week-picture"
+              src="./images/sunny.png"
+              style="width: 50%"
+              alt="sunny-picture"
+            />
+            <p class="fifth-day-temperature-max">15°C</p>
+            <p class="fifth-day-temperature-min" style="color: #afafaf">3°C</p>
+          </div>
+          <div class="col-lg-2 weekdays text-center">
+            <h4 class="sixth-day-label">Fri</h4>
+            <img
+              class="sixth-day-of-week-picture"
+              src="./images/sunny.png"
+              style="width: 50%"
+              alt="sunny-picture"
+            />
+            <p class="sixth-day-temperature-max">15°C</p>
+            <p class="sixth-day-temperature-min" style="color: #afafaf">3°C</p>
+          </div>
+          <div class="col-lg-1 weekdays text-center">
+            <h4 class="seventh-day-label">Sat</h4>
+            <img
+              class="seventh-day-of-week-picture"
+              src="./images/sunny.png"
+              style="width: 50%"
+              alt="sunny-picture"
+            />
+            <p class="seventh-day-temperature-max">1°C</p>
+            <p class="seventh-day-temperature-min" style="color: #afafaf">
+              3°C
+            </p>
+          </div>
+        </div>
+        <h3>Today's Highlights</h3>
+        <div class="row">
+          <div class="col-lg-4 today-highlights">
+            <p class="uv-index-label">Feels Like</p>
+            <h2 class="text-center m-5 p-4 feels--like--label">5°C</h2>
+          </div>
+          <div class="col-lg-4 today-highlights">
+            <p class="wind-label">Wind</p>
+            <h2 class="text-center m-5 p-4 wind--label">7 km/h</h2>
+          </div>
+          <div class="col-lg-4 today-highlights">
+            <p class="sunrise-label">Sunrise & Sunset</p>
+            <div>
+              <i class="fas fa-arrow-up sunrise-time fa-1x"></i>
+              <p class="mx-auto sunrise--label" style="display: inline">
+                6:35AM
+              </p>
+            </div>
+            <div>
+              <i class="fas fa-arrow-down sunset-time fa-1x"></i>
+              <p class="mx-auto sunset--label" style="display: inline">
+                5:42PM
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 today-highlights">
+            <p class="humidity-label">Humidity</p>
+            <h3 class="text-center m-5 p-4 humidity--label">12%</h3>
+            <p class="m-5">Normal</p>
+          </div>
+          <div class="col-lg-4 today-highlights">
+            <p class="visibility-label">Visibility</p>
+            <h3 class="text-center m-5 p-4 visibility--label">5.2 km</h3>
+            <p class="m-5">Average</p>
+          </div>
+          <div class="col-lg-4 today-highlights">
+            <p class="airquality-label">Max/Min</p>
+            <h3 class="text-center m-5 p-4 max-temperature-label">25°</h3>
+            <hr />
+            <h3 class="text-center min-temperature-label">20°</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
